@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portafolio personal</title>
+    <meta name="description" content="Mi portafolio personal">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="Inicio">Bienvenido a mi portafolio personal</h1>
+        <p><strong>Página de inicio creada solo con HTML5</strong></p>
+        <nav>
+            <ul>
+                <li><a href="#Inicio">Inicio</a></li>
+                <li><a href="#Presentacion">Presentación</a></li>
+                <li><a href="#Sobre">Sobre mí</a></li>
+                <li><a href="#Habilidades">Habilidades</a></li>
+                <li><a href="#Proyectos">Proyectos</a></li>
+                <li><a href="#Tabla">Tabla de presentación</a></li>
+                <li><a href="#Contacto">Contacto</a></li>
+                <li><a href="#Pie">Pie de página</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2 id="Presentacion">Breve presentación</h2>
+        <p>Bienvenido a mi portafolio. Este es un proyecto personal en el que presento mi experiencia y habilidades en
+            desarrollo web y programación. Mi objetivo es usar esta página como una vitrina para mi crecimiento
+            profesional, donde comparto información relevante sobre mi trabajo y los proyectos en los que he
+            participado. Aunque algunos proyectos son ficticios, muestran una aproximación a mi estilo de trabajo y lo
+            que puedo lograr con dedicación.</p>
+    </section>
+
+    <main>
+        <section>
+            <h2 id="Sobre">Sobre mí</h2>
+            <p>Mi nombre es Ronald Styck Torres Romero, soy un estudiante de desarrollo web y programación apasionado
+                por la tecnología y la innovación. Me interesa principalmente el desarrollo de aplicaciones web y la
+                creación de soluciones digitales útiles. Considero el aprendizaje continuo como una parte fundamental de
+                mi crecimiento, y estoy siempre en búsqueda de mejorar y perfeccionar mis habilidades.</p>
+            <img src="like.jpg" alt="Retrato de Ronald Torres" width="500" >
+        </section>
+        <hr>
+        <section>
+            <h2 id="Habilidades">Habilidades</h2>
+            <ol>
+                <li>Manejo de herramientas tecnológicas</li>
+                <li>Conocimientos en programación (HTML, CSS, JavaScript)</li>
+                <li>Buena lógica de programación</li>
+                <li>Capacidad de trabajar bajo presión</li>
+                <li>Habilidad para el trabajo en equipo</li>
+                <li>Disciplina y dedicación</li>
+            </ol>
+        </section>
+        <hr>
+        <section id="Proyectos">
+            <h2>Galería de proyectos</h2>
+            <ul>
+                <li><strong>Proyecto Portafolio Web:</strong> Creación de un sitio web de portafolio personal,
+                    utilizando HTML, CSS y JavaScript.</li>
+                <li><strong>Aplicación de Gestión de Tareas:</strong> Prototipo de aplicación web que permite a los
+                    usuarios crear, organizar y priorizar tareas.</li>
+                <li><strong>Sitio de Noticias Tecnológicas:</strong> Diseño de un sitio web de noticias centrado en
+                    temas tecnológicos.</li>
+                <li><strong>Calculadora Básica:</strong> Creación de una calculadora básica con JavaScript para
+                    operaciones matemáticas simples.</li>
+                <li><strong>Juego de Memoria:</strong> Desarrollo de un juego de memoria con tarjetas interactivas.</li>
+            </ul>
+        </section>
+        <hr>
+        <section>
+            <h2 id="Tabla">Tabla de presentación</h2>
+            <table border="1">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellidos</th>
+                    <th>Edad</th>
+                    <th>Celular</th>
+                    <th>Correo</th>
+                </tr>
+                <tr>
+                    <td>Ronald</td>
+                    <td>Torres Romero</td>
+                    <td>19</td>
+                    <td>0979783167</td>
+                    <td>ronaldtorres846@gmail.com</td>
+                </tr>
+            </table>
+        </section>
+        <hr>
+        <section id="Contacto">
+            <h2>Contacto</h2>
+            <fieldset>
+                <legend><b> Formulario de contacto </b></legend>
+                <form action="enviar.php" method="post">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <br> <br>
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br> <br>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                    <br> <br>
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpiar</button>
+                </form>
+            </fieldset>
+        </section>
+    </main>
+    <hr>
+    <footer id="Pie">
+        <p>© 2024 Mi portafolio personal. Todos los derechos reservados.</p>
+        <p>Contacto: ronaldtorres846@gmail.com</p>
+    </footer>
+</body>
+
+</html>
