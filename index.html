@@ -1,124 +1,233 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Portafolio personal</title>
-    <meta name="description" content="Mi portafolio personal">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Personal</title>
+    <meta name="description" content="Mi primer portafolio web">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="icon.png">
 </head>
-
 <body>
-    <header>
-        <h1 id="Inicio">Bienvenido a mi portafolio personal</h1>
-        <p><strong>Página de inicio creada solo con HTML5</strong></p>
+    <!-- Encabezado con barra de navegación -->
+    <header class="cabeza">
+        <h1>Portafolio Personal de Ronald Styck Torres Romero</h1>
+        <label for=""></label>
         <nav>
-            <ul>
-                <li><a href="#Inicio">Inicio</a></li>
-                <li><a href="#Presentacion">Presentación</a></li>
-                <li><a href="#Sobre">Sobre mí</a></li>
-                <li><a href="#Habilidades">Habilidades</a></li>
-                <li><a href="#Proyectos">Proyectos</a></li>
-                <li><a href="#Tabla">Tabla de presentación</a></li>
-                <li><a href="#Contacto">Contacto</a></li>
-                <li><a href="#Pie">Pie de página</a></li>
+            <ul class="navegacion" >
+                <li onclick="location.href='#intro'" class="koko"><a href="#intro" target="_blank">Introducción</a></li>
+                <li onclick="location.href='#sobre-mi'" class="koko" onclick ="" ><a href="#sobre-mi">Sobre mí</a></li>
+                <li onclick="location.href='#tabla-de-contacto'" class="koko" onclick =""><a href="#tabla-de-contacto">Contáctenos</a></li>
+                <li onclick="location.href='#formulario'" class="koko" onclick =""><a href="#formulario">Formulario</a></li>
             </ul>
         </nav>
     </header>
 
-    <section>
-        <h2 id="Presentacion">Breve presentación</h2>
-        <p>Bienvenido a mi portafolio. Este es un proyecto personal en el que presento mi experiencia y habilidades en
-            desarrollo web y programación. Mi objetivo es usar esta página como una vitrina para mi crecimiento
-            profesional, donde comparto información relevante sobre mi trabajo y los proyectos en los que he
-            participado. Aunque algunos proyectos son ficticios, muestran una aproximación a mi estilo de trabajo y lo
-            que puedo lograr con dedicación.</p>
-    </section>
+    <!-- Contenido principal -->
+    <main class="contenedor">
+        <!-- Sobre mí -->
+        <section id="sobre-mi" class="sobre-mi">
+            <h2>Ronald Torres</h2>
+            <img src="like.jpg" alt="Ronald Torres"  class="img"/>
+            
+        </section>
+        <section>
+            <p class="p-mi">
+                <strong>Mi nombre es Ronald Styck Torres Romero, soy estudiante de tercer semestre, 
+                vivo en la ciudad de Montalvo, cantón Los Ríos.
+                Soy persona carismática y emprendedora, conocida por su habilidad para resolver 
+                problemas y su pasión por aprender. Con un enfoque siempre optimista, Ronald 
+                destaca por su capacidad para trabajar en equipo y su compromiso con los 
+                objetivos que se propone. Le encanta explorar nuevas ideas, enfrentar retos
+                 y superarse continuamente. En su tiempo libre, disfruta de actividades al 
+                 aire libre, leer libros sobre desarrollo personal y pasar tiempo con su 
+                 familia y amigos. Su personalidad amigable y su ética de trabajo lo convierten
+                  en alguien con quien siempre es un placer colaborar.</strong>
+            </p>
+        </section>
+<br><br>
+                <!-- Introducción -->
+                <section id="intro" class="intro">
+                    <h2 class="introo" >Introducción a mi Portafolio</h2>
+                    <p class="introp">¡Bienvenido a mi portafolio web! Este espacio ha sido diseñado y desarrollado con cuidado utilizando HTML y CSS, dos tecnologías esenciales en el desarrollo web. A través de este proyecto, no solo muestro mis habilidades técnicas, sino también mi creatividad y dedicación al detalle.  
+                    </p>
+                    <img src="intro.jpeg" alt="imagen-intro" class="img-intro">
+                </section>
+        
 
-    <main>
-        <section>
-            <h2 id="Sobre">Sobre mí</h2>
-            <p>Mi nombre es Ronald Styck Torres Romero, soy un estudiante de desarrollo web y programación apasionado
-                por la tecnología y la innovación. Me interesa principalmente el desarrollo de aplicaciones web y la
-                creación de soluciones digitales útiles. Considero el aprendizaje continuo como una parte fundamental de
-                mi crecimiento, y estoy siempre en búsqueda de mejorar y perfeccionar mis habilidades.</p>
-            <img src="like.jpg" alt="Retrato de Ronald Torres" width="500" >
-        </section>
-        <hr>
-        <section>
-            <h2 id="Habilidades">Habilidades</h2>
-            <ol>
-                <li>Manejo de herramientas tecnológicas</li>
-                <li>Conocimientos en programación (HTML, CSS, JavaScript)</li>
-                <li>Buena lógica de programación</li>
-                <li>Capacidad de trabajar bajo presión</li>
-                <li>Habilidad para el trabajo en equipo</li>
-                <li>Disciplina y dedicación</li>
-            </ol>
-        </section>
-        <hr>
-        <section id="Proyectos">
-            <h2>Galería de proyectos</h2>
-            <ul>
-                <li><strong>Proyecto Portafolio Web:</strong> Creación de un sitio web de portafolio personal,
-                    utilizando HTML, CSS y JavaScript.</li>
-                <li><strong>Aplicación de Gestión de Tareas:</strong> Prototipo de aplicación web que permite a los
-                    usuarios crear, organizar y priorizar tareas.</li>
-                <li><strong>Sitio de Noticias Tecnológicas:</strong> Diseño de un sitio web de noticias centrado en
-                    temas tecnológicos.</li>
-                <li><strong>Calculadora Básica:</strong> Creación de una calculadora básica con JavaScript para
-                    operaciones matemáticas simples.</li>
-                <li><strong>Juego de Memoria:</strong> Desarrollo de un juego de memoria con tarjetas interactivas.</li>
+        <!-- Habilidades y Competencias -->
+        <!-- Habilidades y Competencias -->
+        <section class="t-hc" id="habilidades-competencias">
+            <hr />
+            <h2 class="introo">Habilidades y Competencias</h2>
+            <ul class="lista-hc">
+                <li>Creatividad</li>
+                <li>Colaborativo</li>
+                <li>Atento</li>
+                <li>Dedicado</li>
+                <li>Aprendo con la práctica</li>
             </ul>
+            <figure>
+                <img src="habilidades.avif" alt="imagen-habilidades" class="imagen-habilidades">
+                <figcaption>Habilidades y Competencias</figcaption>
+            </figure>
         </section>
-        <hr>
-        <section>
-            <h2 id="Tabla">Tabla de presentación</h2>
-            <table border="1">
-                <tr>
-                    <th>Nombre</th>
-                    <th>Apellidos</th>
-                    <th>Edad</th>
-                    <th>Celular</th>
-                    <th>Correo</th>
-                </tr>
-                <tr>
-                    <td>Ronald</td>
-                    <td>Torres Romero</td>
-                    <td>19</td>
-                    <td>0979783167</td>
-                    <td>ronaldtorres846@gmail.com</td>
-                </tr>
+
+        <!-- Galería de Proyectos -->
+        <section id="galeria">
+            <h2 class="introo">Galería de Proyectos</h2>
+            <article>
+                <h3>App de seguimiento de hábitos</h3>
+                <p>Esta aplicación está diseñada para ayudar a los usuarios a establecer y alcanzar metas diarias, semanales o mensuales en áreas como ejercicio, alimentación saludable, lectura, entre otras.</p>
+                <figure>
+                    <img src="habitminder.webp" alt="Imagen de la aplicación de seguimiento de hábitos" class="img">
+                    <figcaption>App de seguimiento de hábitos</figcaption>
+                </figure>
+            </article>
+            <article>
+                <h3>Calculadora de gastos personales</h3>
+                <p>Esta aplicación permite a los usuarios gestionar de manera eficiente sus ingresos y gastos personales. Ofrece gráficos detallados para visualizar en qué categorías estás gastando más y proporciona recomendaciones sobre cómo mejorar la administración de tu dinero.</p>
+                <figure>
+                    <img src="calculadora_datos.png" alt="Pantalla de la calculadora de gastos personales" class="img">
+                    <figcaption>Calculadora de gastos personales</figcaption>
+                </figure>
+            </article>
+            <article>
+                <h3>App de recetas de cocina</h3>
+                <p>Esta aplicación es ideal para aquellos que disfrutan cocinar o buscan inspiración en la cocina. Permite a los usuarios buscar recetas, guardarlas en una lista personalizada y compartirlas con otros.</p>
+                <figure>
+                    <img src="OIP.jpeg" alt="Pantalla de la app de recetas de cocina" class="img">
+                    <figcaption>App de recetas de cocina</figcaption>
+                </figure>
+            </article>
+        </section>
+        
+        <!-- Tabla de contacto -->
+        <section id="tabla-de-contacto">
+            <h2 class="introo">Contáctenos</h2>
+            <table border="1" class="tablacon">
+                <caption class="tablainfo"><strong> Información de Contacto</strong></caption>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Edad</th>
+                        <th>Teléfono</th>
+                        <th>Dirección</th>
+                        <th>Email</th>
+                        <th>Ocupación</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ronald</td>
+                        <td>19</td>
+                        <td>0987103828</td>
+                        <td>Av. Principal 123</td>
+                        <td>ronald@email.com</td>
+                        <td>Estudiante</td>
+                    </tr>
+                    <tr>
+                        <td>Vivi</td>
+                        <td>22</td>
+                        <td>0917384920</td>
+                        <td>Calle Ficticia 456</td>
+                        <td>vivi@email.com</td>
+                        <td>Diseñadora</td>
+                    </tr>
+                    <tr>
+                        <td>Ana</td>
+                        <td>25</td>
+                        <td>0998765432</td>
+                        <td>Calle Luna 789</td>
+                        <td>ana@email.com</td>
+                        <td>Abogada</td>
+                    </tr>
+                    <tr>
+                        <td>Luis</td>
+                        <td>30</td>
+                        <td>0965432109</td>
+                        <td>Avenida Sol 101</td>
+                        <td>luis@email.com</td>
+                        <td>Ingeniero</td>
+                    </tr>
+                    <tr>
+                        <td>María</td>
+                        <td>28</td>
+                        <td>0986451234</td>
+                        <td>Calle Flores 202</td>
+                        <td>maria@email.com</td>
+                        <td>Doctor</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="6">Datos reservados</td>
+                    </tr>
+                </tfoot>
             </table>
         </section>
-        <hr>
-        <section id="Contacto">
-            <h2>Contacto</h2>
-            <fieldset>
-                <legend><b> Formulario de contacto </b></legend>
-                <form action="enviar.php" method="post">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
-                    <br> <br>
-                    <label for="email">Correo electrónico:</label>
-                    <input type="email" id="email" name="email" required>
-                    <br> <br>
+        
+        
+        <!-- Formulario -->
+        <section id="formulario" >
+            <form action="contacto.php" method="POST" class="for" >
+                <fieldset>
+                    <legend> <h3 class="t-form">Información Personal</h3></legend>
+                    <label for="nombre">Nombres:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Juan Daniel" required>
+                    <br><br>
+
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos" placeholder="Torres Oñate" required>
+                    <br><br>
+
+                    <label for="pais">Genero:</label>
+                    <select id="pais" name="pais" required>
+                        <option value="">Selecciona tu género</option>
+                        <option value="hombre">Hombre</option>
+                        <option value="mujer">Mujer</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                    <br><br>
+
+                    <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+                    <input type="date" id="fecha-nacimiento" name="fecha-nacimiento">
+                    <br><br>
+
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="0987654321" required>
+                    <br><br>
+
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="ejemplo@gmail.com" required>
+                    <br><br>
+
                     <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-                    <br> <br>
-                    <button type="submit">Enviar</button>
-                    <button type="reset">Limpiar</button>
-                </form>
-            </fieldset>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí" required></textarea>
+                    <br><br>
+
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Reset">
+                </fieldset>
+            </form>
         </section>
     </main>
-    <hr>
-    <footer id="Pie">
-        <p>© 2024 Mi portafolio personal. Todos los derechos reservados.</p>
-        <p>Contacto: ronaldtorres846@gmail.com</p>
+
+    <!-- Información adicional en el aside -->
+    <aside class="asi">
+        <h2>Información Adicional</h2>
+        <p>En este portafolio encontrarás proyectos, habilidades y formas de contacto conmigo.</p>
+        <ul>
+            <li><a href="#habilidades-competencias">Consulta mis habilidades</a></li>
+            <li><a href="#galeria">Proyectos destacados</a></li>
+            <li><a href="#tabla-de-contacto">Contáctame</a></li>
+        </ul>
+    </aside>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Todos los derechos reservados</p>
     </footer>
 </body>
-
 </html>
