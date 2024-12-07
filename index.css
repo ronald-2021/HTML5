@@ -427,6 +427,7 @@ br {
       footer p {
           margin: 0;
           font-size: 14px;
+          
       }
 
 
@@ -440,6 +441,7 @@ br {
 
 
       @media (max-width: 600px) {
+
         /* Estilo de la cabecera */
         .cabeza {
           flex-direction: column; /* Coloca los elementos en una columna */
@@ -504,6 +506,44 @@ br {
           padding: 10px;
           margin: 10px 0;
         }
+        .t-hc {
+          display: block;
+          margin: 10px;
+      }
+  
+      .t-hc .lista-hc {
+          width: 100%;
+          padding: 10px;
+      }
+  
+      .t-hc figure {
+          width: 100%;
+          margin-top: 20px;
+      }
+  
+      .tablacon {
+          width: 100%;
+          font-size: 12px;
+          border-collapse: collapse;
+      }
+  
+      .tablacon caption {
+          font-size: 16px;
+          font-weight: bold;
+      }
+  
+      .tablacon th, .tablacon td {
+          padding: 8px;
+          text-align: left;
+      }
+  
+      .tablacon th {
+          font-size: 14px;
+      }
+  
+      .tablacon td {
+          font-size: 12px;
+      }
       }
       
 
@@ -567,5 +607,35 @@ br {
           padding: 15px;
           margin: 15px 0;
         }
+        .t-hc {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          margin: 20px;
+      }
+  
+      .t-hc .lista-hc {
+          width: 45%;
+      }
+  
+      .t-hc figure {
+          width: 45%;
+      }
+  
+      .tablacon {
+          width: 100%;
+          font-size: 14px;
+          border-collapse: collapse;
+      }
+  
+      .tablacon caption {
+          font-size: 18px;
+          font-weight: bold;
+      }
+  
+      .tablacon th, .tablacon td {
+          padding: 10px;
+          text-align: left;
+      }
       }
       
