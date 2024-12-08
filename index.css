@@ -440,7 +440,7 @@ br {
 
 
 
-      @media (max-width: 600px) {
+      @media (min-width: 588px) and (max-width: 551px){
 
         /* Estilo de la cabecera */
         .cabeza {
@@ -547,7 +547,7 @@ br {
       }
       
 
-      @media (min-width: 600px) and (max-width: 1024px) {
+      @media (min-width: 400px) and (max-width: 547px) {
         /* Estilo de la cabecera */
         .cabeza {
           flex-direction: row; /* Vuelve a organizar los elementos en fila */
